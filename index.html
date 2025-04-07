@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hourly Wage to Item Cost Calculator</title>
+    <link
+      rel="icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hourly Wage to Item Cost Calculator</h1>
+      <div class="form-group">
+        <label for="wage">Hourly Wage ($):</label>
+        <input
+          type="number"
+          id="wage"
+          placeholder="Enter your hourly wage"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="item-cost">Cost of Item ($):</label>
+        <input
+          type="number"
+          id="item-cost"
+          placeholder="Enter the cost of the item"
+          required
+        />
+      </div>
+      <button onclick="calculateHours()">Calculate Hours</button>
+      <div id="result">
+        <p id="hours-to-work"></p>
+      </div>
+    </div>
+  </body>
+</html>
