@@ -1,0 +1,121 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f7fb; /* Light grey background for a modern feel */
+  color: #333; /* Dark grey text for good contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container for the form */
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  width: 100%;
+  max-width: 380px; /* Ensure a clean width */
+  text-align: center;
+  border: 1px solid #ddd; /* Subtle border */
+}
+
+/* Heading style */
+h1 {
+  font-size: 1.8em;
+  color: #444; /* Slightly lighter grey than body text */
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Form group (label and input) */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Label styling */
+label {
+  display: block;
+  font-size: 1em;
+  color: #555; /* Slightly darker than the input field */
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Input styling */
+input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1em;
+  border: 1px solid #ccc; /* Soft border */
+  border-radius: 6px;
+  outline: none;
+  background-color: #f8f8f8; /* Light grey input background */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #3a3a3a; /* Darker grey for focus */
+  box-shadow: 0 0 5px rgba(58, 58, 58, 0.2); /* Subtle shadow on focus */
+}
+
+/* Button styling */
+button {
+  background-color: #5c6bc0; /* Muted blue for a professional touch */
+  color: white;
+  border: none;
+  padding: 14px 0;
+  font-size: 1.1em;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #3f51b5; /* Darker blue on hover */
+}
+
+/* Result display styling */
+#result {
+  margin-top: 20px;
+}
+
+/* Text styling for the result */
+#hours-to-work {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Responsive Design (Mobile First) */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  input,
+  button {
+    font-size: 1em;
+    padding: 12px;
+  }
+}
